@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+  background-color: #111111;
+  font-family: 'Rubik', sans-serif;
+	
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  font-size: 62.5%;
+	width: 100%;
+  margin: 7rem auto 0;
+  align-items: center;
+  color: #cccccc;
+	/* overflow-x: hidden;  */
+}
+
+.page h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 767px) {
+  .page {
+    width: 90%;
+    margin-top: 5rem;
+  }
+}
+
+/* Стили для планшетов и десктопов */
+@media (min-width: 768px) {
+  .page {
+    width: 80%;
+  }
+}
+
