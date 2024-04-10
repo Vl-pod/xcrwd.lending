@@ -4,6 +4,9 @@
     <IntroContent />
     <FeaturesContent />
     <BugtrackerDemo />
+  </div>
+  <TickerBox />
+  <div class="page">
     <PlatformTeam />
     <FooterMain />
   </div>
@@ -16,6 +19,7 @@ import FeaturesContent from './components/FeaturesContent.vue'
 import BugtrackerDemo from './components/BugtrackerDemo.vue'
 import PlatformTeam from './components/PlatformTeam.vue'
 import FooterMain from './components/FooterMain.vue'
+import TickerBox from './components/TickerBox.vue'
 
 export default {
   components: {
@@ -24,7 +28,8 @@ export default {
     FeaturesContent,
     BugtrackerDemo,
     PlatformTeam,
-    FooterMain
+    FooterMain,
+    TickerBox
   },
   data() {
     return {}
