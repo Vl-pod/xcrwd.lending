@@ -1,15 +1,19 @@
 <template>
   <div class="team-section">
-    <h2 class="team-header">Platform team</h2>
+		<h2 class="team-header">Platform team</h2>
     <div class="team-container">
-      <div class="team-member--card">
+			<TeamMemberCard/>
+			<TeamMemberCard/>
+			<TeamMemberCard/>
+			<TeamMemberCard/>
+			
+      <!-- <div class="team-member--card">
         <img src="../assets/images/danya_wbcg.png" alt="" class="member-photo dan" />
         <div class="member-card--background background-1"></div>
         <div class="member-card--info">
           <h4>Danya</h4>
           <p>owner</p>
         </div>
-        <!-- <div class="member-caption">Danya</div> -->
       </div>
       <div class="team-member--card">
         <img src="../assets/images/anton_wbcgl.png" alt="" class="member-photo" />
@@ -34,13 +38,19 @@
           <h4>Max</h4>
           <p>Smart contracts developer</p>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+	import TeamMemberCard from './TeamMemberCard.vue';
+
+	export default {
+		components: {
+			TeamMemberCard
+		}
+	}
 </script>
 
 <style scoped>
@@ -50,14 +60,14 @@ export default {}
 }
 
 .team-container {
-  margin-top: 3em;
+  /* margin-top: 3em; */
   display: flex;
   align-items: center;
   justify-content: space-around;
 	gap: 5px;
   box-shadow: 0px 0px 68px #000000;
   border-radius: 24px;
-  /* height: 400px; */
+  /* height: 350px;  */
   width: 100%;
   padding: 20px;
 }
