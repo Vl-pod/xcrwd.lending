@@ -1,39 +1,70 @@
 <template>
-  <div class="card-container">
-    <div class="card-image--container">
-      <img src="../assets/images/danil_wbcg.png" alt="team member photo" class="member-photo" />
+  <div class="card-container" @click="toggleDescription">
+		<div class="card-image--container">
+      <img :src="member.photo" :alt="member.name + ' фото'" class="member-photo" />
     </div>
     <div class="card-background"></div>
-    <div class="card-footer">
+    <div class="card-footer" :class="{ 'expanded': isExpanded }">
       <div class="footer-text--container">
         <div class="member-card--info">
-          <h4 class="member-name">Danya</h4>
-          <p class="member-role">owner</p>
+          <h4 class="member-name">{{ member.name }}</h4>
+          <p class="member-role">{{ member.role }}</p>
         </div>
         <div class="footer-info--icon">
           <span class="material-symbols-outlined"> info </span>
         </div>
       </div>
-			<div class="member-description">
-				<p class="member-description--text">
-					7+ years as QA Engineer (fullstack); Worked in fields as UGC, social networks,
-					e-commerce, O2O, telecom, foodtech, streaming and now Web3; strong experience in
-					developing and optimizing teamwork processes, and set upping release management;
-					experience of leaderships in small QA and dev teams; mentoring and educating interns and
-					new employees.
+				<p class="member-description--text" v-show="isExpanded">
+					{{ member.description }}
 				</p>
-			</div>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+	export default {
+  props: {
+    member: {
+      type: Object,
+      required: true
+    }
+  },
+  data() {
+    return {
+      isExpanded: false
+    }
+  },
+  methods: {
+    toggleDescription() {
+      if (!this.isExpanded) {
+        // Если описание не отображается, то развернуть card-footer
+        this.isExpanded = true;
+        // Добавить обработчик клика для закрытия описания при клике вне card-container
+        document.addEventListener('click', this.handleClickOutside);
+      } else {
+        // Иначе свернуть card-footer
+        this.isExpanded = false;
+        // Удалить обработчик клика вне card-container
+        document.removeEventListener('click', this.handleClickOutside);
+      }
+    },
+    handleClickOutside(event) {
+      // Проверить, был ли клик вне card-container
+      const cardContainer = this.$el;
+      if (!cardContainer.contains(event.target)) {
+        // Если был клик вне card-container, свернуть card-footer
+        this.isExpanded = false;
+        // Удалить обработчик клика вне card-container
+        document.removeEventListener('click', this.handleClickOutside);
+      }
+    }
+  }
+}
 </script>
 
 <style scoped>
 .card-container {
-  margin-top: 5%;
+  margin-top: 10%;
 	width: 280px;
   height: 200px;
   border-radius: 24px;
@@ -43,6 +74,7 @@ export default {}
   justify-content: flex-end;
   box-shadow: 0px 0px 20px 0px rgba(238, 0, 255, 0);
   transition: box-shadow 0.3s ease;
+	cursor: pointer;
 }
 
 .card-container:hover {
@@ -71,12 +103,38 @@ export default {}
   height: 30%;
   border-radius: 0 0 24px 24px;
   background-color: #000000;
-  opacity: 70%;
+  opacity: 80%;
   color: #ffffff;
   position: absolute;
   bottom: 0;
   z-index: 2;
+
+	padding: 0 5%;
+	transition: height 0.5s ease, border-radius 0.5s ease;
+  overflow: hidden;
 }
+
+.card-footer.expanded {
+  height: 125%;
+	border-radius: 24px;
+}
+
+.member-description--text {
+	display: none;
+	opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.card-footer.expanded .member-description--text {
+  display: block;
+  opacity: 10;
+	margin-top: 5px;
+	font-size: 12px;
+}
+
+/* .card-footer.expanded .card-footer {
+	border-radius: 24px;
+} */
 
 .footer-text--container {
   display: flex;
@@ -86,7 +144,7 @@ export default {}
 
 .member-card--info {
   display: inline-block;
-  margin-left: 10%;
+  /* margin-left: 10%; */
 }
 
 .member-name {
@@ -97,9 +155,9 @@ export default {}
   font-size: 14px;
 }
 
-.footer-info--icon {
+/* .footer-info--icon {
   margin-right: 5%;
-}
+} */
 
 .material-symbols-outlined {
   font-size: 35px;
@@ -111,8 +169,10 @@ export default {}
   font-weight: 300;
 }
 
-.member-description--text {
-	display: none;
+
+
+.card-container:not(:hover) .card-footer:not(.expanded) .member-description--text {
+  opacity: 0;
 }
 
 .card-background {
