@@ -4,8 +4,16 @@
       <div class="logo">
         <img src="../assets/images/demologo1.png" alt="xcrwd logo" />
       </div>
-      <nav class="nav">
-        <ul class="nav-list">
+			<nav class="nav-center">
+				<ul class="nav-list ">
+          <li class="nav-item">Platform</li>
+          <li class="nav-item">Bounty</li>
+          <li class="nav-item">Community</li>
+					<li class="nav-item">Team</li>
+        </ul>
+			</nav>
+      <nav class="nav-right">	
+        <ul class="nav-list ">
           <li class="nav-item">Chat</li>
           <li class="nav-item">News</li>
           <li class="nav-item">Demo</li>
@@ -60,6 +68,10 @@ export default {
 .nav {
   display: flex;
   font-size: 1.3em;
+}
+
+.nav-center {
+  margin-left: 10%;
 }
 
 ul {

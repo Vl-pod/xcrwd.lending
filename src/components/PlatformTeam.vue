@@ -2,10 +2,10 @@
   <div class="team-section">
     <h2 class="team-header">Platform team</h2>
     <div class="team-container">
-      <TeamMemberCard :member="teamMembers[0]" />
-      <TeamMemberCard :member="teamMembers[1]" />
-      <TeamMemberCard :member="teamMembers[2]" />
-      <TeamMemberCard :member="teamMembers[3]" />
+      <TeamMemberCard :member="teamMembers[0]"/>
+      <TeamMemberCard :member="teamMembers[1]"/>
+      <TeamMemberCard :member="teamMembers[2]"/>
+      <TeamMemberCard :member="teamMembers[3]"/>
     </div>
   </div>
 </template>
@@ -25,25 +25,25 @@ export default {
           role: 'owner',
           description:
             '7+ years as QA Engineer (fullstack); Worked in fields as UGC, social networks, e-commerce, O2O, telecom, foodtech, streaming and now Web3; strong experience in developing and optimizing teamwork processes, and setting up release management; experience of leadership in small QA and dev teams; mentoring and educating interns and new employees.',
-          photo: '../assets/images/danya_wbcg.png'
+					// imageUrl: '/assets/images/danya_wbcg.png'
         },
         {
           name: 'Anton',
           role: 'Fullstack developer',
           description: 'Anton, Fullstack developer: 8+ years as Android & iOS Software Engineer with experience in Backend & Web. 3+ years of experience in management of teams;',
-          photo: '../assets/images/anton_wbcg.png'
+          // imageUrl: '/public/images/anton_wbcg.png'
         },
         {
           name: 'Danil',
           role: 'Frontend developer',
           description: 'Danil, Frontend developer, (ex QA Engineer): 5 years as full-stack QA& AQA, 2 years in web3.',
-          photo: '../assets/images/danil_wbcg.png'
+          // imageUrl: '/public/images/danil_wbcg.png'
         },
         {
           name: 'Max',
           role: 'Smart contracts developer',
           description: 'Max, Smart contracts developer:3+ years as Blockchain engineer; Solidity, Rust, Node.js, Typescript, Substrate, Soroban; Develop production-ready DeFi products and backend infrastructure;',
-          photo: '../assets/images/max_wbcg.png'
+          // imageUrl: '/public/images/max_wbcg.png'
         }
       ]
     }

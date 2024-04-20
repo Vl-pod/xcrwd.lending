@@ -1,7 +1,7 @@
 <template>
   <div class="card-container" @click="toggleDescription">
 		<div class="card-image--container">
-      <img :src="member.photo" :alt="member.name + ' фото'" class="member-photo" />
+      <img src='/public/images/danil_wbcg.png' :alt="member.name + ' фото'" class="member-photo" />
     </div>
     <div class="card-background"></div>
     <div class="card-footer" :class="{ 'expanded': isExpanded }">
@@ -21,13 +21,19 @@
   </div>
 </template>
 
-<script>
+<script >
 	export default {
   props: {
+		// imageUrl: {
+		// 	type: String,
+		// 	required: true
+		// },
+
     member: {
       type: Object,
       required: true
-    }
+    },
+		
   },
   data() {
     return {
@@ -132,10 +138,6 @@
 	font-size: 12px;
 }
 
-/* .card-footer.expanded .card-footer {
-	border-radius: 24px;
-} */
-
 .footer-text--container {
   display: flex;
   justify-content: space-between;
@@ -144,7 +146,6 @@
 
 .member-card--info {
   display: inline-block;
-  /* margin-left: 10%; */
 }
 
 .member-name {
@@ -155,10 +156,6 @@
   font-size: 14px;
 }
 
-/* .footer-info--icon {
-  margin-right: 5%;
-} */
-
 .material-symbols-outlined {
   font-size: 35px;
   font-weight: 100;
@@ -168,8 +165,6 @@
 .card-container:hover .material-symbols-outlined {
   font-weight: 300;
 }
-
-
 
 .card-container:not(:hover) .card-footer:not(.expanded) .member-description--text {
   opacity: 0;
@@ -201,7 +196,7 @@
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
   border: 2px solid #494949;
-  background-size: 500% 300%; /* чтобы градиент был большим и плавно переходил */
+  background-size: 500% 300%; 
   background-position: 0% 40%;
 
   filter: grayscale(70%);
