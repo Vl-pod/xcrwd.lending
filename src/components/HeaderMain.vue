@@ -6,10 +6,18 @@
       </div>
 			<nav class="nav-center">
 				<ul class="nav-list ">
-          <li class="nav-item">Platform</li>
-          <li class="nav-item">Bounty</li>
-          <li class="nav-item">Community</li>
-					<li class="nav-item">Team</li>
+          <li class="nav-item">
+						<RouterLink to="/" class="nav-link">Platform</RouterLink>
+					</li>
+          <li class="nav-item">
+						<RouterLink to="/bounty" class="nav-link">Bounty</RouterLink>
+					</li>
+          <li class="nav-item">
+						<RouterLink to="/community" class="nav-link">Community</RouterLink>
+					</li>
+					<li class="nav-item">
+						<RouterLink to="/team" class="nav-link">Team</RouterLink>
+					</li>
         </ul>
 			</nav>
       <nav class="nav-right">	
@@ -19,7 +27,7 @@
           <li class="nav-item">Demo</li>
           <li class="nav-item">
             <AnimatedButton
-              title="Fix Web3"
+              title="Go App"
               href="https://docs.google.com/forms/d/e/1FAIpQLSe_wXZwonmQvWU2wdsJh_9BRGYFZSPyq6vuqfRg3btATF-pJQ/viewform"
               target="_blank"
               type="button"
@@ -43,6 +51,7 @@ export default {
 </script>
 
 <style scoped>
+
 .header {
   color: white;
   background-color: rgb(22 22 22 / 45%);
@@ -70,9 +79,16 @@ export default {
   font-size: 1.3em;
 }
 
+.nav-link,
+.nav-link a {
+  text-decoration: none;
+  color: white; 
+}
+
 .nav-center {
   margin-left: 10%;
 }
+
 
 ul {
   display: flex;

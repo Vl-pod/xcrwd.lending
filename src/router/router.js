@@ -1,27 +1,31 @@
-import { createMemoryHistory, createRouter } from 'vue-router';
+import { createWebHistory, createRouter } from 'vue-router';
+import MainPage from '@/pages/MainPage.vue';
+import CommunityPage from '@/pages/CommunityPage.vue';
+import TeamPage from '@/pages/TeamPage.vue';
+import BountyPage from '@/pages/BountyPage.vue';
 
 
 const routes = [
 	{
 		path: '/',
-		component: ''
+		component: MainPage
 	},
 	{
-		path: '/',
-		component: ''
+		path: '/bounty',
+		component: BountyPage
 	},
 	{
-		path: '/',
-		component: ''
+		path: '/community',
+		component: CommunityPage
 	},
 	{
-		path: '/',
-		component: ''
+		path: '/team',
+		component: TeamPage
 	}
 ];
 
 const router = createRouter({
-  history: createMemoryHistory(),
+  history: createWebHistory(),
   routes,
 })
 
