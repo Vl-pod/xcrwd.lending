@@ -1,8 +1,8 @@
-import { createWebHistory, createRouter } from 'vue-router';
-import MainPage from '@/pages/MainPage.vue';
-import CommunityPage from '@/pages/CommunityPage.vue';
-import TeamPage from '@/pages/TeamPage.vue';
-import BountyPage from '@/pages/BountyPage.vue';
+import { createWebHistory, createRouter } from 'vue-router'
+import MainPage from '@/pages/MainPage.vue'
+import CommunityPage from '@/pages/CommunityPage.vue'
+import TeamPage from '@/pages/TeamPage.vue'
+import BountyPage from '@/pages/BountyPage.vue'
 
 
 const routes = [
