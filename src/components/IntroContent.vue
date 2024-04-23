@@ -53,7 +53,6 @@
   </div> -->
 
 	<div class="what-about--container">
-		<h2 class="what-about--header">What is xcrwd.io?</h2>
 		<p>
 			xcrwd.io is a beta and crowd testing platform that helps Web3 projects with enhanced product
 			quality.
@@ -164,7 +163,7 @@ export default {
 }
 
 .what-about--container {
-  margin-top: 3em;
+  margin-top: 3rem;
   font-size: 25px;
   text-align: justify;
   line-height: 36px;

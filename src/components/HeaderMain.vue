@@ -2,7 +2,7 @@
   <div class="header">
     <div class="header-container">
       <div class="logo">
-        <img src="../assets/images/demologo1.png" alt="xcrwd logo" />
+        <img src="../assets/images/xcrwdlogo.png" alt="xcrwd logo" />
       </div>
 			<nav class="nav-center">
 				<ul class="nav-list ">
@@ -73,7 +73,7 @@ export default {
 }
 
 .logo img {
-  width: 120px;
+  width: 100px;
 }
 
 .nav {
