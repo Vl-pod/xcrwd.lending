@@ -1,7 +1,7 @@
 <template>
   <div class="card-container" @click="toggleDescription">
 		<div class="card-image--container">
-      <img src='/public/images/danil_wbcg.png' :alt="member.name + ' фото'" class="member-photo" />
+      <img src='/public/images/vb-draft-photo.png' :alt="member.name + ' фото'" class="member-photo" />
     </div>
     <div class="card-background"></div>
     <div class="card-footer" :class="{ 'expanded': isExpanded }">
@@ -97,7 +97,7 @@
 
 .member-photo {
   width: 100%;
-  height: 110%;
+  /* height: 110%; */
   object-fit: cover;
   position: absolute;
   bottom: 0;

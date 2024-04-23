@@ -12,7 +12,7 @@ import BugtrackerDemo from '../components/BugtrackerDemo.vue'
 	export default {
 		components: {
 			FeaturesContent,
-			BugtrackerDemo
+			// BugtrackerDemo
 		}
 	}
 </script>

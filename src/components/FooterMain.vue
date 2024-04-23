@@ -67,6 +67,20 @@ export default {
   flex-direction: row;
   justify-content: space-between;
   gap: 10rem;
+  width: 80vw;
+  height: 80px;
+  margin-top: 2rem;
+
+  border-top: 1px dashed;
+  border-image: linear-gradient(to right,    #ee00ff,
+    #ff008c,
+    #00fff7,
+    #00a2ff,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ee00ff) 1 0 0 0;
 }
 
 .social-container span{

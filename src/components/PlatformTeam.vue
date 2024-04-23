@@ -22,7 +22,7 @@ export default {
       teamMembers: [
         {
           name: 'Danya',
-          role: 'owner',
+          role: 'Founder',
           description:
             '7+ years as QA Engineer (fullstack); Worked in fields as UGC, social networks, e-commerce, O2O, telecom, foodtech, streaming and now Web3; strong experience in developing and optimizing teamwork processes, and setting up release management; experience of leadership in small QA and dev teams; mentoring and educating interns and new employees.',
 					// imageUrl: '/assets/images/danya_wbcg.png'
