@@ -16,7 +16,7 @@ export default {
 <style scoped>
 .demo-button {
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
   border: none;
   outline: none;
   cursor: pointer;
@@ -27,6 +27,9 @@ export default {
   animation: glowing 20s linear infinite;
   background-size: 400%;
   transition: 0.7s ease;
+
+  font-family: "Kode Mono", monospace;
+  font-weight: 600;
 }
 
 .demo-button:before {
@@ -75,7 +78,7 @@ export default {
 }
 
 .demo-button:hover {
-  color: #000000;
+  color: #ffffff;
   transition: 0.4s;
   transform: scale(1.3);
 }
@@ -86,7 +89,7 @@ export default {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #111;
+  background: #ffffff;
   background-size: 400%;
   left: 0;
   top: 0;

@@ -24,10 +24,10 @@
         <ul class="nav-list ">
           <li class="nav-item">Chat</li>
           <li class="nav-item">News</li>
-          <li class="nav-item">Demo</li>
+          <!-- <li class="nav-item">Demo</li> -->
           <li class="nav-item">
             <AnimatedButton
-              title="Go App"
+              title="Launch Demo"
               href="https://docs.google.com/forms/d/e/1FAIpQLSe_wXZwonmQvWU2wdsJh_9BRGYFZSPyq6vuqfRg3btATF-pJQ/viewform"
               target="_blank"
               type="button"
@@ -54,7 +54,7 @@ export default {
 
 .header {
   color: white;
-  background-color: rgb(22 22 22 / 45%);
+  /* background-color: rgb(22 22 22 / 45%); */
   position: fixed;
   width: 100%;
   top: 0;
@@ -62,6 +62,8 @@ export default {
   z-index: 1000;
   backdrop-filter: blur(10px);
   padding: 20px;
+  font-family: "Kode Mono", monospace;
+  font-weight: 600;
 }
 
 .header-container {
@@ -82,7 +84,7 @@ export default {
 .nav-link,
 .nav-link a {
   text-decoration: none;
-  color: white; 
+  color: rgb(0, 0, 0); 
 }
 
 .nav-center {
@@ -100,7 +102,7 @@ ul {
   border-radius: 0.8rem;
 	font-size: 1.2rem;
   padding: 10px;
-  color: #ffffff;
+  color: #000000;
   transition: 0.7s ease;
   cursor: pointer;
 }
