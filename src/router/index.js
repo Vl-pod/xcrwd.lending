@@ -11,7 +11,7 @@ const routes = [
 		component: MainPage
 	},
 	{
-		path: '/bounty',
+		path: '/platform',
 		component: BountyPage
 	},
 	{

@@ -7,10 +7,10 @@
 			<nav class="nav-center">
 				<ul class="nav-list ">
           <li class="nav-item">
-						<RouterLink to="/" class="nav-link">Platform</RouterLink>
+						<RouterLink to="/" class="nav-link">About</RouterLink>
 					</li>
           <li class="nav-item">
-						<RouterLink to="/bounty" class="nav-link">Bounty</RouterLink>
+						<RouterLink to="/platform" class="nav-link">Platform</RouterLink>
 					</li>
           <li class="nav-item">
 						<RouterLink to="/community" class="nav-link">Community</RouterLink>
