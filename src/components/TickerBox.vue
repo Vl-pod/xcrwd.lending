@@ -1,4 +1,5 @@
 <template>
+  <div class="tickerbox-header"></div>
     <div class="tickerbox-marquee">
       <div class="ticker-track">
         <div class="ticker-content">
@@ -172,9 +173,14 @@
     margin-right: 100px;
 }
 
+.tickerbox-header {
+  margin-top: 4rem;
+  font-size: 20px;
+}
+
 .tickerbox-marquee {
   overflow-x: hidden;
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
   position: relative;
   width: 100vw;
   height: 180px; 
@@ -234,4 +240,23 @@
     box-shadow: inset 0 0 10px #ee00ff, 0 0 20px #ff008c, 0 0 30px #00fff7;
   }
 } */
+
+@media screen and (max-width: 1024px) {
+  .tickerbox-marquee {
+    height: 120px;
+  }
+
+  .ticker-content {
+    font-size: 25px;
+  }
+
+  .ticker-content span{
+    margin-right: 50px;
+  }
+
+  .ticker-content img {
+    height: 25px;
+    margin-right: 50px;
+  }
+}
 </style>

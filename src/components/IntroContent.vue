@@ -59,7 +59,7 @@
 			quality.
 		</p>
 		<p>
-			We are building platform, designed to involve web3 users and QA-engineers to actively
+			Our platform designed to involve web3 users and QA-engineers to actively
 			participate in the testing and release web3 products processes. The platform is actually a
 			synergy of 3 main components: the bugtracker, expert web3 QA community and education portal.
 			We aim to transform xcrwd.io into an expert and full-fledged testing community that not only

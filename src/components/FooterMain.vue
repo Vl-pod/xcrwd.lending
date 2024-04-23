@@ -88,7 +88,7 @@ export default {
 }
 
 .join-button--footer {
-  font-size: 26px;
+  font-size: 22px;
   margin: 3rem 0 3rem;
 }
 
