@@ -101,7 +101,7 @@
             <span>DAO</span>
             <span>Governance</span>
             <span>Payments</span>
-            <span>Dapps</span>
+            <span>dApps</span>
             <span>Tools</span>
             <span>Infrastructure</span>
             <span>Smart Contracts</span>
@@ -121,7 +121,7 @@
             <span>DAO</span>
             <span>Governance</span>
             <span>Payments</span>
-            <span>Dapps</span>
+            <span>dApps</span>
             <span>Tools</span>
             <span>Infrastructure</span>
             <span>Smart Contracts</span>
@@ -158,7 +158,7 @@
 <style scoped>
 .ticker-content {
   color: black;
-  font-size: 60px;
+  font-size: 50px;
   font-family: "Kode Mono", monospace;
 }
 
@@ -177,7 +177,7 @@
   margin-top: 5rem;
   position: relative;
   width: 100vw;
-  height: 240px; 
+  height: 180px; 
   background: linear-gradient(
     45deg,
     #ee00ff,
