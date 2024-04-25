@@ -1,7 +1,10 @@
 <template>
   <div class="footer-section">
-    <h2 class="footer-header">Contacts:</h2>
     <div class="social-container">
+      <div>
+        <span class="rigths">All rights reserved 2024©</span>
+      </div>
+      
       <ul class="social-list">
         <li class="social-item tg">
           <a href="https://t.me/xxai_xo" target="_blank" class="social-anchor">
@@ -28,14 +31,21 @@
           </a>
         </li>
       </ul>
-    </div>
-    <AnimatedButton
+      <AnimatedButton
       class="join-button--footer"
       title="Join xcrwd"
       href="https://docs.google.com/forms/d/e/1FAIpQLSe_wXZwonmQvWU2wdsJh_9BRGYFZSPyq6vuqfRg3btATF-pJQ/viewform"
       target="_blank"
       type="button"
     />
+    </div>
+    <!-- <AnimatedButton
+      class="join-button--footer"
+      title="Join xcrwd"
+      href="https://docs.google.com/forms/d/e/1FAIpQLSe_wXZwonmQvWU2wdsJh_9BRGYFZSPyq6vuqfRg3btATF-pJQ/viewform"
+      target="_blank"
+      type="button"
+    /> -->
   </div>
 </template>
 
@@ -50,15 +60,31 @@ export default {
 </script>
 
 <style scoped>
-.footer-section {
-  margin-top: 3em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 .social-container {
-  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10rem;
+  width: 80vw;
+  height: 80px;
+  margin-top: 2rem;
+
+  border-top: 1px dashed;
+  border-image: linear-gradient(to right,    #ee00ff,
+    #ff008c,
+    #00fff7,
+    #00a2ff,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ee00ff) 1 0 0 0;
+}
+
+.social-container span{
+  font-size: 15px;
 }
 
 .social-list {
@@ -76,7 +102,7 @@ export default {
 }
 
 .join-button--footer {
-  font-size: 26px;
+  font-size: 22px;
   margin: 3rem 0 3rem;
 }
 
@@ -84,15 +110,22 @@ export default {
 
 @media screen and (width < 1024px) {
 	.footer-section {
-		margin-top: 3rem;
+    padding: 1rem;
 	}
+
+  .social-container {
+    gap: 1rem;
+  }
+  .social-container span {
+    font-size: 12px;
+  }
 	
 	.footer-header {
 		font-size: 20px;
 	}
 
 	.join-button--footer {
-		font-size: 16px;
+		display: none;
 	}
 }
 </style>

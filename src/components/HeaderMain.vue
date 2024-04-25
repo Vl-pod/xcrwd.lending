@@ -2,17 +2,32 @@
   <div class="header">
     <div class="header-container">
       <div class="logo">
-        <img src="../assets/images/demologo1.png" alt="xcrwd logo" />
+        <img src="../assets/images/xcrwdlogo.png" alt="xcrwd logo" />
       </div>
-      <nav class="nav">
-        <ul class="nav-list">
-          <li class="nav-item">Chat</li>
-          <li class="nav-item">News</li>
-          <li class="nav-item">Demo</li>
+			<nav class="nav-center">
+				<ul class="nav-list ">
+          <li class="nav-item">
+						<RouterLink to="/" class="nav-link">About</RouterLink>
+					</li>
+          <!-- <li class="nav-item">
+						<RouterLink to="/platform" class="nav-link">Platform</RouterLink>
+					</li>
+          <li class="nav-item">
+						<RouterLink to="/community" class="nav-link">Community</RouterLink>
+					</li>
+					<li class="nav-item">
+						<RouterLink to="/team" class="nav-link">Team</RouterLink>
+					</li> -->
+        </ul>
+			</nav>
+      <nav class="nav-right">	
+        <ul class="nav-list ">
+          <a class="nav-item" href="https://t.me/+fd4W1CRUTGQ5MGU6" target="_blank">Chat</a>
+          <a class="nav-item" href="https://t.me/xcrwd" target="_blank">News</a>
           <li class="nav-item">
             <AnimatedButton
-              title="Fix Web3"
-              href="https://docs.google.com/forms/d/e/1FAIpQLSe_wXZwonmQvWU2wdsJh_9BRGYFZSPyq6vuqfRg3btATF-pJQ/viewform"
+              title="Launch Demo"
+              href="https://demo.xcrwd.io"
               target="_blank"
               type="button"
               class="nav-item"
@@ -35,9 +50,10 @@ export default {
 </script>
 
 <style scoped>
+
 .header {
   color: white;
-  background-color: rgb(22 22 22 / 45%);
+  /* background-color: rgb(22 22 22 / 45%); */
   position: fixed;
   width: 100%;
   top: 0;
@@ -45,6 +61,8 @@ export default {
   z-index: 1000;
   backdrop-filter: blur(10px);
   padding: 20px;
+  font-family: "Kode Mono", monospace;
+  font-weight: 600;
 }
 
 .header-container {
@@ -54,13 +72,24 @@ export default {
 }
 
 .logo img {
-  width: 120px;
+  width: 100px;
 }
 
 .nav {
   display: flex;
   font-size: 1.3em;
 }
+
+.nav-link,
+.nav-link a {
+  text-decoration: none;
+  color: rgb(0, 0, 0); 
+}
+
+.nav-center {
+  margin-left: 10%;
+}
+
 
 ul {
   display: flex;
@@ -72,7 +101,7 @@ ul {
   border-radius: 0.8rem;
 	font-size: 1.2rem;
   padding: 10px;
-  color: #ffffff;
+  color: #000000;
   transition: 0.7s ease;
   cursor: pointer;
 }
