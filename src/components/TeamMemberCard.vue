@@ -1,5 +1,5 @@
 <template>
-  <div class="card-container" @click="toggleDescription">
+  <div class="card-container" @click="toggleDescription" :class="{ 'expanded': isExpanded }">
 		<div class="card-image--container">
       <img src='/public/images/draftphoto.png' :alt="member.name + ' фото'" class="member-photo" />
     </div>
@@ -79,8 +79,12 @@
   position: relative;
   justify-content: flex-end;
   box-shadow: 0px 0px 20px 0px rgba(238, 0, 255, 0);
-  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, margin-top 0.3s ease;
 	cursor: pointer;
+}
+
+.card-container.expanded {
+	margin-top: 12%;
 }
 
 .card-container:hover {
