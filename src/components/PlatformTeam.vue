@@ -30,19 +30,19 @@ export default {
         {
           name: 'Anton',
           role: 'Fullstack developer',
-          description: 'Anton, Fullstack developer: 8+ years as Android & iOS Software Engineer with experience in Backend & Web. 3+ years of experience in management of teams;',
+          description: 'Fullstack developer: 8+ years as Android & iOS Software Engineer with experience in Backend & Web. 3+ years of experience in management of teams;',
           // imageUrl: '/public/images/anton_wbcg.png'
         },
         {
           name: 'Danil',
           role: 'Frontend developer',
-          description: 'Danil, Frontend developer, (ex QA Engineer): 5 years as full-stack QA& AQA, 2 years in web3.',
+          description: 'Frontend developer, (ex QA Engineer): 5 years as full-stack QA& AQA, 2 years in web3.',
           // imageUrl: '/public/images/danil_wbcg.png'
         },
         {
           name: 'Max',
           role: 'Smart contracts developer',
-          description: 'Max, Smart contracts developer:3+ years as Blockchain engineer; Solidity, Rust, Node.js, Typescript, Substrate, Soroban; Develop production-ready DeFi products and backend infrastructure;',
+          description: 'Smart contracts developer:3+ years as Blockchain engineer; Solidity, Rust, Node.js, Typescript, Substrate, Soroban; Develop production-ready DeFi products and backend infrastructure;',
           // imageUrl: '/public/images/max_wbcg.png'
         }
       ]
@@ -53,17 +53,19 @@ export default {
 
 <style scoped>
 .team-section {
-  margin-top: 3em;
+  margin-top: 5rem;
   width: 100%;
+}
+h2 {
+  font-family: "Kode Mono", monospace;
 }
 
 .team-container {
-  /* margin-top: 3em; */
   display: flex;
   align-items: center;
   justify-content: space-around;
   gap: 5px;
-  box-shadow: 0px 0px 68px #000000;
+  /* box-shadow: 0px 0px 68px #000000; */
   border-radius: 24px;
   /* height: 350px;  */
   width: 100%;

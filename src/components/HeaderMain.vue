@@ -9,7 +9,7 @@
           <li class="nav-item">
 						<RouterLink to="/" class="nav-link">About</RouterLink>
 					</li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
 						<RouterLink to="/platform" class="nav-link">Platform</RouterLink>
 					</li>
           <li class="nav-item">
@@ -17,18 +17,17 @@
 					</li>
 					<li class="nav-item">
 						<RouterLink to="/team" class="nav-link">Team</RouterLink>
-					</li>
+					</li> -->
         </ul>
 			</nav>
       <nav class="nav-right">	
         <ul class="nav-list ">
-          <li class="nav-item">Chat</li>
-          <li class="nav-item">News</li>
-          <!-- <li class="nav-item">Demo</li> -->
+          <a class="nav-item" href="https://t.me/+fd4W1CRUTGQ5MGU6" target="_blank">Chat</a>
+          <a class="nav-item" href="https://t.me/xcrwd" target="_blank">News</a>
           <li class="nav-item">
             <AnimatedButton
               title="Launch Demo"
-              href="https://docs.google.com/forms/d/e/1FAIpQLSe_wXZwonmQvWU2wdsJh_9BRGYFZSPyq6vuqfRg3btATF-pJQ/viewform"
+              href="https://demo.xcrwd.io"
               target="_blank"
               type="button"
               class="nav-item"

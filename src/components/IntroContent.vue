@@ -24,33 +24,12 @@
         </div>
       </div>
       <div class="keypoint-logo">
-        <img src="../assets/images/logo-intro.png" alt="" class="keypoint-logo--img" />
+        <!-- <img src="../assets/images/logo-intro.png" alt="" class="keypoint-logo--img" /> -->
+        <AnimatedImagePreview />
+          <!-- <div class="image-text">Community Bugtracker Education</div> -->
+          <div class="image-text">Lets fix web3 world together <br> with all power of crowd and beta testing</div>
       </div>
   </div>
-
-
-
-  <!-- <div class="intro-container">
-    <div class="keypoint-container">
-      <div class="keypoint-text">
-        <h2 class="keypoint-header">The new era in web3 bug-bounties:</h2>
-        <p>for now our team is building:</p>
-        <p>* Powerful bug tracking system as a core of xcrwd.io platform</p>
-        <p>* Full-fledged community of experts in Web3 QA and development</p>
-        <p>* Education portal for contributors</p>
-        <AnimatedButton
-          class="join-button--intro"
-          title="Join xcrwd"
-          href="https://docs.google.com/forms/d/e/1FAIpQLSe_wXZwonmQvWU2wdsJh_9BRGYFZSPyq6vuqfRg3btATF-pJQ/viewform"
-          target="_blank"
-          type="button"
-        />
-      </div>
-      <div class="keypoint-logo">
-        <img src="../assets/images/logo-intro.png" alt="" class="keypoint-logo--img" />
-      </div>
-    </div>
-  </div> -->
 
 	<div class="what-about--container">
 		<p>
@@ -59,9 +38,9 @@
 		</p>
 		<p>
 			Platform designed to involve web3 users and QA-engineers to actively
-			participate in the testing and release web3 products processes. The <a class="route-to-section" href="/platform">platform</a> is actually a
-			synergy of 3 main components: the bugtracker, expert web3 QA community and education portal.
-			Our <a class="route-to-section" href="/team">team</a> aimed to transform xcrwd.io into an expert and full-fledged testing community that not only
+			participate in the testing and release web3 products processes. The <a class="route-to-section">platform</a> is actually a
+			synergy of 3 main components: <a class="route-to-section">the bugtracker</a>, <a class="route-to-section">expert web3 QA community</a> and <a class="route-to-section">education portal</a>.
+			Our <a class="route-to-section">team</a> aimed to transform xcrwd.io into an expert and full-fledged testing community that not only
 			benefits from testers feedback but also actively contributes to the advancement of web3
 			technology.<br />
 		</p>
@@ -70,10 +49,12 @@
 
 <script>
 import AnimatedButton from './AnimatedButton.vue'
+import AnimatedImagePreview from '@/components/AnimatedImagePreview.vue'
 
 export default {
   components: {
-    AnimatedButton
+    AnimatedButton,
+    AnimatedImagePreview
   }
 }
 </script>
@@ -90,6 +71,7 @@ export default {
   font-size: 20px;
   width: 100%;
   justify-content: space-between;
+  gap: 2rem;
 }
 
 .keypoint-buttons {
@@ -154,6 +136,20 @@ export default {
   bottom: -20px;
 }
 
+.keypoint-logo {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-text {
+  font-family: "Kode Mono", monospace;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  padding: 2rem;
+}
+
 .keypoint-logo--img {
   width: 420px;
   margin-right: 2rem;
@@ -200,7 +196,7 @@ export default {
 
 @media screen and (width < 1024px) {
 	
-	.intro-container {
+	.information-container {
     margin-left: 10px;
     margin-right: 10px;
     /* height: 210px; */
@@ -214,7 +210,15 @@ export default {
 		flex-direction: column;
 	}
 
+  .keypoint-text {
+    margin-left: 0px;
+  }
+
+  
 	.keypoint-logo--img {
+		display: none;
+	}
+  .keypoint-logo {
 		display: none;
 	}
 
@@ -223,7 +227,7 @@ export default {
 	}
 
 	.keypoint-header {
-		font-size: 1rem;
+		font-size: 2rem;
 		padding-top: 10px;
 	}
 
@@ -234,7 +238,7 @@ export default {
 	}
 
 	p {
-		font-size: 10px;
+		font-size: 12px;
 	}
 
 	.keypoint-container p:nth-last-child(-n + 4) {

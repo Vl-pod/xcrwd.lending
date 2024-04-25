@@ -1,7 +1,7 @@
 <template>
   <div class="card-container" @click="toggleDescription">
 		<div class="card-image--container">
-      <img src='/public/images/vb-draft-photo.png' :alt="member.name + ' фото'" class="member-photo" />
+      <img src='/public/images/draftphoto.png' :alt="member.name + ' фото'" class="member-photo" />
     </div>
     <div class="card-background"></div>
     <div class="card-footer" :class="{ 'expanded': isExpanded }">
@@ -70,7 +70,7 @@
 
 <style scoped>
 .card-container {
-  margin-top: 10%;
+  margin-top: 3%;
 	width: 280px;
   height: 200px;
   border-radius: 24px;
@@ -101,7 +101,7 @@
   object-fit: cover;
   position: absolute;
   bottom: 0;
-  filter: grayscale(100%) contrast(120%);
+  /* filter: grayscale(100%) contrast(120%); */
 }
 
 .card-footer {
@@ -216,4 +216,12 @@
     background-position: 0% 50%;
   }
 }
+
+@media screen and (width < 1024px) {
+  .card-image--container {
+    width: 60%;
+  height: 60%;
+  }
+}
+
 </style>
